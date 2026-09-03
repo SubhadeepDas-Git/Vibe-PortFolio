@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subhadeep Das | Computer Science Student &amp; Aspiring Software Engineer</title>
+  <meta name="description" content="Personal portfolio of Subhadeep Das. Computer Science Engineering Student at Lovely Professional University, Aspiring Software Engineer, AI/ML Explorer, and Graphic Designer.">
+  <meta name="keywords" content="Subhadeep Das, Software Engineer, Computer Science, AI, ML, Portfolio, IoT, Graphic Designer, Lovely Professional University">
+  <meta name="author" content="Subhadeep Das">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Subhadeep Das | Computer Science Student &amp; Aspiring Software Engineer">
+  <meta property="og:description" content="Computer Science Engineering student who combines software development, AI/ML, project building, graphic design, and leadership.">
+  <meta property="og:image" content="./assets/favicon.svg">
+  
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/variables.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/components.css">
+  <link rel="stylesheet" href="./css/sections.css">
+  <link rel="stylesheet" href="./css/animations.css">
+  <!-- Anti-FOUC Theme Initialization -->
+  <script>
+    (function() {
+      try {
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme === 'light') {
+          document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Subhadeep Das - Home">
+        <div class="brand-symbol">SD</div>
+        <div class="brand-meta">
+          <span class="brand-name">Subhadeep Das</span>
+          <span class="brand-status">Available for Opportunities</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#beyond-code" class="nav-link">Beyond Code</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="./assets/Subhadeep_Das_CV.pdf" download="Subhadeep_Das_CV.pdf" class="btn btn-primary btn-sm" aria-label="Download CV PDF">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download CV
+        </a>
+
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div id="mobile-menu" class="mobile-nav" aria-label="Mobile Navigation">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#achievements" class="nav-link">Achievements</a>
+      <a href="#certificates" class="nav-link">Certificates</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#beyond-code" class="nav-link">Beyond Code</a>
+      <a href="#contact" class="nav-link">Contact</a>
+
+      <div class="mobile-theme-row">
+        <span class="mobile-theme-label">Interface Theme</span>
+        <button id="mobile-theme-toggle" class="theme-toggle" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="mobile-nav-cta">
+        <a href="./assets/Subhadeep_Das_CV.pdf" download="Subhadeep_Das_CV.pdf" class="btn btn-primary btn-lg">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          Download Official CV
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-text-col reveal">
+          <div class="hero-greeting">Hi, I'm</div>
+          <h1 class="hero-name">SUBHADEEP DAS</h1>
+          <p class="hero-headline">Computer Science Student &amp; Aspiring Software Engineer</p>
+          
+          <p class="hero-bio">
+            An ambitious Computer Science Engineering student passionate about software development, artificial intelligence, and machine learning. Focused on translating engineering concepts into practical, impactful hardware and software solutions while bringing real-world design, leadership, and creative problem-solving to every build.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary btn-lg">
+              Explore My Work
+              <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="./assets/Subhadeep_Das_CV.pdf" download="Subhadeep_Das_CV.pdf" class="btn btn-secondary btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download CV
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/SubhadeepDas-Git" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/subhadeep-das-8a6ba4329/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              LinkedIn
+            </a>
+            <a href="mailto:studyac135@gmail.com" class="social-link" aria-label="Send Email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              studyac135@gmail.com
+            </a>
+            <a href="tel:+917888631268" class="social-link" aria-label="Call Mobile">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              +91 7888631268
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Portrait Photo Column -->
+        <div class="hero-photo-col reveal reveal-delay-1">
+          <div class="hero-photo-wrapper glow-effect">
+            <div class="hero-photo-card">
+              <img 
+                src="./assets/subhadeep_photo.jpg" 
+                alt="Subhadeep Das - Computer Science Student and Aspiring Software Engineer" 
+                class="hero-photo-img"
+                loading="eager"
+                width="681"
+                height="1024"
+              >
+              <div class="hero-photo-badge">
+                <span class="photo-badge-name">Subhadeep Das</span>
+                <span class="photo-badge-status"><span class="badge-dot"></span> B.Tech CSE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Terminal Console -->
+        <div class="hero-console glow-effect reveal reveal-delay-2" aria-hidden="true">
+          <div class="console-bar">
+            <div class="console-dots">
+              <span class="console-dot dot-red"></span>
+              <span class="console-dot dot-yellow"></span>
+              <span class="console-dot dot-green"></span>
+            </div>
+            <span class="console-title">subhadeep@dev-station:~</span>
+            <span class="badge badge-live"><span class="badge-dot"></span> Online</span>
+          </div>
+          <div class="console-body">
+            <div class="console-line">
+              <span class="line-prompt">$</span>
+              <span class="line-val">cat developer_profile.json</span>
+            </div>
+            <div class="console-line">
+              <span class="line-comment">// Core Academic &amp; Technical Positioning</span>
+            </div>
+            <div class="console-line">
+              <span class="line-key">"name":</span>
+              <span class="line-val">"Subhadeep Das",</span>
+            </div>
+            <div class="console-line">
+              <span class="line-key">"program":</span>
+              <span class="line-val">"B.Tech Computer Science and Engineering",</span>
+            </div>
+            <div class="console-line">
+              <span class="line-key">"institution":</span>
+              <span class="line-val">"Lovely Professional University",</span>
+            </div>
+            <div class="console-line">
+              <span class="line-key">"focus":</span>
+              <span class="line-highlight">["Software Engineering", "AI/ML", "IoT Systems", "UI/Design"],</span>
+            </div>
+            <div class="console-line">
+              <span class="line-key">"active_projects":</span>
+              <span class="line-val">["KrishakBhandu S-1", "Medicine Tracker for Elders"],</span>
+            </div>
+            <div class="console-line">
+              <span class="line-key">"creative_role":</span>
+              <span class="line-val">"Freelance Graphic Designer &amp; DSO Artist",</span>
+            </div>
+            <div class="console-line">
+              <span class="line-prompt">$</span>
+              <span class="line-val">sysinfo --skills</span>
+            </div>
+            <div class="console-pills">
+              <span class="console-pill">Python</span>
+              <span class="console-pill">C++</span>
+              <span class="console-pill">TensorFlow</span>
+              <span class="console-pill">OpenCV</span>
+              <span class="console-pill">MySQL</span>
+              <span class="console-pill">Flutter</span>
+              <span class="console-pill">Linux</span>
+              <span class="console-pill">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         02. ABOUT SECTION
+         ========================================================================== -->
+    <section id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">01 // Profile</div>
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Bridging computational engineering, practical machine learning, and human-centered design.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I am a <strong>Computer Science and Engineering student at Lovely Professional University</strong> (B.Tech, August 2025 – Present) aiming to build an impactful career in software engineering and applied artificial intelligence. Rather than studying theory in isolation, I immerse myself in building functional, real-world systems.
+            </p>
+            <p>
+              My hands-on technical work spans from programming in <strong>C++ and Python</strong> to exploring deep machine learning workflows with <strong>TensorFlow and OpenCV</strong>, as well as hardware integration with microcontrollers. I enjoy developing end-to-end solutions that solve tangible human difficulties—whether it is healthcare tracking for the elderly or AI-driven vernacular support for agriculture.
+            </p>
+            <p>
+              Alongside engineering, I have cultivated a strong background in <strong>Graphic Design and Fine Art</strong> through active freelance client work and serving in the <strong>Department of Student Organization (DSO)</strong>. These roles have honed my abilities in client communication, team leadership, event coordination, data management, and public speaking, allowing me to approach software development with both technical rigor and creative perspective.
+            </p>
+
+            <!-- Brand Matrix Pill -->
+            <div class="brand-matrix">
+              <div class="matrix-item">
+                <span class="matrix-word">CODE</span>
+                <span class="matrix-sub">C++, Python, SQL</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-word">DESIGN</span>
+                <span class="matrix-sub">Graphic Design &amp; Art</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-word">BUILD</span>
+                <span class="matrix-sub">AI &amp; IoT Solutions</span>
+              </div>
+              <div class="matrix-item">
+                <span class="matrix-word">LEARN</span>
+                <span class="matrix-sub">Continuous Growth</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Specs Card -->
+          <div class="specs-card glow-effect reveal reveal-delay-1">
+            <div class="specs-title">Academic &amp; Professional Snapshot</div>
+            <div class="specs-list">
+              <div class="spec-item">
+                <span class="spec-label">Current Degree</span>
+                <span class="spec-value">B.Tech in Computer Science and Engineering</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">University</span>
+                <span class="spec-value">Lovely Professional University, Punjab</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Current Academic Standing</span>
+                <span class="spec-value">CGPA: 6.21 (Aug '25 – Present)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Hometown / Schooling</span>
+                <span class="spec-value">Barrackpore, West Bengal</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Primary Interests</span>
+                <span class="spec-value">Software Development, AI/ML, IoT, Graphic Design</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Primary Languages</span>
+                <span class="spec-value">Python, C++, C, SQL, HTML/CSS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         03. SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">02 // Capabilities</div>
+          <h2 class="section-title">Technical &amp; Professional Skills</h2>
+          <p class="section-subtitle">Core programming languages, software platforms, and soft skills drawn directly from hands-on academic and project experience.</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card glow-effect reveal">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="skill-category-title">Programming Languages</h3>
+                <span class="skill-category-desc">Core systems, scripting &amp; markup</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                C++
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m10 15 5-3-5-3v6Z"></path></svg>
+                Python
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M15 9h-4a2 2 0 0 0-2 2v2a2 2 0 0 0 2 2h4"></path></svg>
+                C
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 4 2.5 16L12 22l5.5-2L20 4H4z"></path></svg>
+                HTML
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4l2 16 6 2 6-2 2-16z"></path><path d="M8 8h8M8 12h7M9 16l3 1 3-1"></path></svg>
+                CSS
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+                SQL
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                Flutter
+              </span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-category-card glow-effect reveal reveal-delay-1">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-category-title">Tools &amp; Platforms</h3>
+                <span class="skill-category-desc">Frameworks, databases &amp; environments</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><circle cx="18" cy="6" r="3"></circle><path d="M18 9v2a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V9"></path><line x1="12" y1="13" x2="12" y2="15"></line></svg>
+                Git
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                MySQL
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="14" x="2" y="3" rx="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                Linux
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                TensorFlow
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                OpenCV
+              </span>
+            </div>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category-card glow-effect reveal reveal-delay-2">
+            <div class="skill-category-header">
+              <div class="skill-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+              <div>
+                <h3 class="skill-category-title">Professional &amp; Soft Skills</h3>
+                <span class="skill-category-desc">Collaboration, execution &amp; agility</span>
+              </div>
+            </div>
+            <div class="skill-chips-wrap">
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m4.93 4.93 4.24 4.24"></path><path d="m14.83 9.17 4.24-4.24"></path><path d="m14.83 14.83 4.24 4.24"></path><path d="m9.17 14.83-4.24 4.24"></path></svg>
+                Problem-Solving
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+                Adaptability
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                Leadership
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                Time Management
+              </span>
+              <span class="chip">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                Communication
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         04. PROJECTS SECTION
+         ========================================================================== -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">03 // Featured Works</div>
+          <h2 class="section-title">Engineering Projects</h2>
+          <p class="section-subtitle">Real university research and practical full-stack AI implementations combining hardware, algorithms, and domain problem solving.</p>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- PROJECT 01 -->
+          <article class="project-card glow-effect reveal">
+            <div class="project-card-grid">
+              <div class="project-content">
+                <div>
+                  <div class="project-meta-top">
+                    <span class="project-num">PROJECT // 01</span>
+                    <span class="project-date">Oct 2025 – Nov 2025</span>
+                  </div>
+                  
+                  <h3 class="project-title">AI &amp; IoT Based Medicine Reminder and Tracker for Elders</h3>
+                  <div class="project-subtitle">AI + IoT Hardware &amp; Remote Caregiver Monitoring System</div>
+                  
+                  <p class="project-desc">
+                    A research-oriented university project specifically designed for elderly care and for individuals who may forget to take scheduled medicines due to busy routines. The system delivers proactive local audio-visual alerts and allows caretakers to monitor dosing adherence remotely.
+                  </p>
+                  
+                  <div class="project-bullets">
+                    <div class="project-bullet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Engineered as a low-cost, accessible healthcare solution powered by an ESP microcontroller.</span>
+                    </div>
+                    <div class="project-bullet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Automated reminder routines notifying patients while transmitting remote telemetry updates to caretakers.</span>
+                    </div>
+                    <div class="project-bullet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Developed using C++, Python, Arduino IDE, AI/ML models, OpenCV, and TensorFlow.</span>
+                    </div>
+                  </div>
+
+                  <div class="project-tech-stack">
+                    <span class="badge">Python</span>
+                    <span class="badge">C++</span>
+                    <span class="badge">Arduino IDE</span>
+                    <span class="badge">ESP Microcontroller</span>
+                    <span class="badge">AI/ML</span>
+                    <span class="badge">OpenCV</span>
+                    <span class="badge">TensorFlow</span>
+                  </div>
+                </div>
+
+                <div class="project-actions">
+                  <span class="badge badge-neutral">Research-Oriented University Project</span>
+                </div>
+              </div>
+
+              <!-- Project 01 Architecture Blueprint -->
+              <div class="project-visual">
+                <div class="blueprint-container">
+                  <div class="blueprint-header">
+                    <span>ARCHITECTURE SCHEMATIC</span>
+                    <span>HARDWARE + AI/ML</span>
+                  </div>
+
+                  <div class="blueprint-nodes">
+                    <div class="blueprint-node">
+                      <div class="node-title">
+                        <span>[ESP32 / Microcontroller]</span>
+                        <span>WiFi + NTP</span>
+                      </div>
+                      <div class="node-detail">Time synchronization &amp; schedule engine</div>
+                    </div>
+
+                    <div class="blueprint-connection">▼ Local Trigger &amp; Telemetry</div>
+
+                    <div class="blueprint-node">
+                      <div class="node-title">
+                        <span>[Alert &amp; Sensor Node]</span>
+                        <span>I2C LCD + Buzzer</span>
+                      </div>
+                      <div class="node-detail">Visual medicine prompt &amp; physical acknowledgement</div>
+                    </div>
+
+                    <div class="blueprint-connection">▼ Web Server &amp; Vision Check</div>
+
+                    <div class="blueprint-node">
+                      <div class="node-title">
+                        <span>[Remote Caretaker Telemetry]</span>
+                        <span>AI/ML + OpenCV</span>
+                      </div>
+                      <div class="node-detail">Real-time status monitoring &amp; verification logging</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 -->
+          <article class="project-card glow-effect reveal">
+            <div class="project-card-grid">
+              <div class="project-content">
+                <div>
+                  <div class="project-meta-top">
+                    <span class="project-num">PROJECT // 02</span>
+                    <div style="display: flex; gap: 0.5rem; align-items: center;">
+                      <span class="badge badge-live"><span class="badge-dot"></span> In Progress</span>
+                      <span class="project-date">Sep 2025 – Present</span>
+                    </div>
+                  </div>
+                  
+                  <h3 class="project-title">KrishakBhandu S-1</h3>
+                  <div class="project-subtitle">Multilingual AI Chatbot for Farmers</div>
+                  
+                  <p class="project-desc">
+                    An AI-based conversational chatbot designed to resolve farmers' queries in their native local languages. Provides immediate, accessible intelligence on farming practices, equipment utilization, agricultural support, and real-time guidance.
+                  </p>
+                  
+                  <div class="project-bullets">
+                    <div class="project-bullet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Key focus areas: Farming techniques, equipment troubleshooting, agricultural assistance, and real-time guidance.</span>
+                    </div>
+                    <div class="project-bullet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Multilingual query processing enabling accessibility across regional farmer dialects without language barriers.</span>
+                    </div>
+                    <div class="project-bullet">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      <span>Architected using modern AI/ML natural language models and full-stack development technologies.</span>
+                    </div>
+                  </div>
+
+                  <div class="project-tech-stack">
+                    <span class="badge">Python</span>
+                    <span class="badge">AI/ML</span>
+                    <span class="badge">Full Stack</span>
+                    <span class="badge">Multilingual NLP</span>
+                  </div>
+                </div>
+
+                <div class="project-actions">
+                  <span class="badge badge-live"><span class="badge-dot"></span> Active Development</span>
+                </div>
+              </div>
+
+              <!-- Project 02 Architecture Blueprint -->
+              <div class="project-visual">
+                <div class="blueprint-container">
+                  <div class="blueprint-header">
+                    <span>CONVERSATIONAL PIPELINE</span>
+                    <span>NLP + FULL STACK</span>
+                  </div>
+
+                  <div class="blueprint-nodes">
+                    <div class="blueprint-node">
+                      <div class="node-title">
+                        <span>[Farmer Local Language Input]</span>
+                        <span>Dialect Query</span>
+                      </div>
+                      <div class="node-detail">Regional language prompt ingestion</div>
+                    </div>
+
+                    <div class="blueprint-connection">▼ NLP Parsing &amp; Intent Recognition</div>
+
+                    <div class="blueprint-node">
+                      <div class="node-title">
+                        <span>[AI/ML Knowledge Engine]</span>
+                        <span>Agri-Advisory Models</span>
+                      </div>
+                      <div class="node-detail">Crops, equipment diagnosis, weather &amp; soil guidelines</div>
+                    </div>
+
+                    <div class="blueprint-connection">▼ Real-Time Vernacular Output</div>
+
+                    <div class="blueprint-node">
+                      <div class="node-title">
+                        <span>[Full-Stack Response Interface]</span>
+                        <span>Real-Time Advisory</span>
+                      </div>
+                      <div class="node-detail">Accurate, low-latency assistance delivered to farmer</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         05. EXPERIENCE SECTION
+         ========================================================================== -->
+    <section id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">04 // Career Journey</div>
+          <h2 class="section-title">Work Experience</h2>
+          <p class="section-subtitle">Real-world design freelancing and university leadership combining creative direction, client execution, and event data coordination.</p>
+        </div>
+
+        <div class="experience-timeline">
+          
+          <!-- EXPERIENCE 01 -->
+          <div class="timeline-item reveal">
+            <div class="timeline-card glow-effect">
+              <div class="timeline-header">
+                <span class="timeline-org">Freelancer</span>
+                <span class="timeline-period">Jan 2026 – Present</span>
+              </div>
+              <div class="timeline-role">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.586 7.586"></path><circle cx="11" cy="11" r="2"></circle></svg>
+                Graphic Designer
+              </div>
+              <p style="font-size: var(--text-sm); color: var(--text-secondary); line-height: 1.7;">
+                Successfully completed freelance graphic design projects for diverse clients, managing creative ideation and technical assets from concept to delivery.
+              </p>
+              <div class="timeline-duties">
+                <div class="duty-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Executed high-quality visual assets, brand identity materials, and digital graphics customized to client specifications.</span>
+                </div>
+                <div class="duty-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Strengthened direct client handling, requirements gathering, iterative feedback handling, and timely project delivery.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- EXPERIENCE 02 -->
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-card glow-effect">
+              <div class="timeline-header">
+                <span class="timeline-org">Department of Student Organization (DSO), LPU</span>
+                <span class="timeline-period">Aug 2025 – Sep 2026</span>
+              </div>
+              <div class="timeline-role">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                Fine Artist, Graphic Designer, Public Speaker
+              </div>
+              <div class="timeline-duties">
+                <div class="duty-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Designed creative assets and physical props for university-wide events and organizational campaigns.</span>
+                </div>
+                <div class="duty-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Designed social media posts to boost event presence and audience engagement online for the organization.</span>
+                </div>
+                <div class="duty-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Coordinated with multidisciplinary teams for DSO student inductions and large-scale university events.</span>
+                </div>
+                <div class="duty-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Handled systematic data management and maintained event data records for post-event analytics.</span>
+                </div>
+                <div class="duty-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  <span>Anchored small-scale events as a substitute Public Speaker, driving stage communication and attendee engagement.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         06. ACHIEVEMENTS SECTION
+         ========================================================================== -->
+    <section id="achievements">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">05 // Milestones</div>
+          <h2 class="section-title">Key Achievements</h2>
+          <p class="section-subtitle">Demonstrated competitive problem solving, national testing ranks, and real-world web delivery.</p>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <div class="achievement-card glow-effect reveal">
+            <div>
+              <div class="achievement-date">Jun 2026</div>
+              <h3 class="achievement-title">Helped local seller to build a website</h3>
+            </div>
+            <span class="achievement-badge">Web Development &amp; Impact</span>
+          </div>
+
+          <div class="achievement-card glow-effect reveal reveal-delay-1">
+            <div>
+              <div class="achievement-date">Mar 2026</div>
+              <h3 class="achievement-title">2 times 2nd runner up in Hackathon</h3>
+            </div>
+            <span class="achievement-badge">Hackathon Podium Finish</span>
+          </div>
+
+          <div class="achievement-card glow-effect reveal reveal-delay-2">
+            <div>
+              <div class="achievement-date">Jul 2025</div>
+              <h3 class="achievement-title">BISAT AIR 2127</h3>
+            </div>
+            <span class="achievement-badge">National Entrance Examination</span>
+          </div>
+
+          <div class="achievement-card glow-effect reveal reveal-delay-3">
+            <div>
+              <div class="achievement-date">Jun 2025</div>
+              <h3 class="achievement-title">JEE Adv. AIR under 12k</h3>
+            </div>
+            <span class="achievement-badge">Premier Engineering Rank</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         07. CERTIFICATES SECTION
+         ========================================================================== -->
+    <section id="certificates">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">06 // Credentials</div>
+          <h2 class="section-title">Certifications</h2>
+          <p class="section-subtitle">Verified technical competencies certified by HackerRank.</p>
+        </div>
+
+        <div class="certificates-grid">
+          
+          <div class="certificate-card glow-effect reveal">
+            <div class="cert-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            </div>
+            <div class="cert-info">
+              <div class="cert-topic">Python</div>
+              <div class="cert-issuer">HackerRank Certified</div>
+              <div class="cert-date">March 2025</div>
+            </div>
+          </div>
+
+          <div class="certificate-card glow-effect reveal reveal-delay-1">
+            <div class="cert-icon-box">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+            </div>
+            <div class="cert-info">
+              <div class="cert-topic">SQL</div>
+              <div class="cert-issuer">HackerRank Certified</div>
+              <div class="cert-date">March 2026</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         08. EDUCATION SECTION
+         ========================================================================== -->
+    <section id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">07 // Academics</div>
+          <h2 class="section-title">Education</h2>
+          <p class="section-subtitle">Academic timeline and foundational qualifications.</p>
+        </div>
+
+        <div class="education-timeline">
+          
+          <!-- LPU -->
+          <div class="edu-item reveal">
+            <div class="edu-card glow-effect">
+              <div class="edu-header">
+                <span class="edu-school">Lovely Professional University</span>
+                <span class="edu-period">Aug 2025 – Present</span>
+              </div>
+              <div class="edu-location">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Phagwara, Punjab
+              </div>
+              <div class="edu-degree">Bachelor of Technology in Computer Science and Engineering</div>
+              <div class="edu-score">
+                <span>Academic Record:</span>
+                <span class="score-badge">CGPA: 6.21</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Central Model School -->
+          <div class="edu-item reveal reveal-delay-1">
+            <div class="edu-card glow-effect">
+              <div class="edu-header">
+                <span class="edu-school">Central Model School</span>
+                <span class="edu-period">Mar 2023 – May 2024</span>
+              </div>
+              <div class="edu-location">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Barrackpore, West Bengal
+              </div>
+              <div class="edu-degree">Senior Secondary Education (Class 12)</div>
+              <div class="edu-score">
+                <span>Final Performance:</span>
+                <span class="score-badge">74%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Army Public School -->
+          <div class="edu-item reveal reveal-delay-2">
+            <div class="edu-card glow-effect">
+              <div class="edu-header">
+                <span class="edu-school">Army Public School</span>
+                <span class="edu-period">Mar 2021 – May 2022</span>
+              </div>
+              <div class="edu-location">
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Barrackpore, West Bengal
+              </div>
+              <div class="edu-degree">Secondary Education (Class 10)</div>
+              <div class="edu-score">
+                <span>Final Performance:</span>
+                <span class="score-badge">90%</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         09. BEYOND CODE SECTION
+         ========================================================================== -->
+    <section id="beyond-code">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-tag">08 // Interdisciplinary</div>
+          <h2 class="section-title">Beyond Code</h2>
+          <p class="section-subtitle">Integrating design aesthetics, active communication, and hands-on hardware to build holistic systems.</p>
+        </div>
+
+        <div class="beyond-grid">
+          
+          <div class="beyond-card glow-effect reveal">
+            <div class="beyond-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="m12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+              DESIGN
+            </div>
+            <h3 class="beyond-title">Graphic Design &amp; Fine Art</h3>
+            <p class="beyond-desc">
+              Extensive freelance design delivery and campus creative campaigns for DSO. Strong visual intuition in composition, typography, and visual communication that directly translates into crafting modern, user-centric software interfaces.
+            </p>
+          </div>
+
+          <div class="beyond-card glow-effect reveal reveal-delay-1">
+            <div class="beyond-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+              COMMUNICATION
+            </div>
+            <h3 class="beyond-title">Public Speaking &amp; Event Coordination</h3>
+            <p class="beyond-desc">
+              Experience anchoring campus events, conducting team coordination for university inductions, and maintaining event data management systems. Strong interpersonal and articulation skills to align engineering teams with users.
+            </p>
+          </div>
+
+          <div class="beyond-card glow-effect reveal reveal-delay-2">
+            <div class="beyond-tag">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+              BUILDING
+            </div>
+            <h3 class="beyond-title">Software / AI / IoT Projects</h3>
+            <p class="beyond-desc">
+              Passionate about transforming theoretical logic into functioning reality. From configuring ESP microcontrollers and computer vision routines to training models and deploying chatbots, I build practical solutions with purpose.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <h2 class="contact-headline">Let's build something.</h2>
+          <p class="contact-subtext">Have an opportunity, project or idea? Let's connect.</p>
+
+          <div class="contact-links-grid">
+            <!-- Email -->
+            <a href="mailto:studyac135@gmail.com" class="contact-action-item">
+              <div class="contact-action-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <span class="contact-action-label">Email</span>
+              <span class="contact-action-val">studyac135@gmail.com</span>
+            </a>
+
+            <!-- Mobile -->
+            <a href="tel:+917888631268" class="contact-action-item">
+              <div class="contact-action-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <span class="contact-action-label">Phone</span>
+              <span class="contact-action-val">+91 7888631268</span>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/SubhadeepDas-Git" target="_blank" rel="noopener noreferrer" class="contact-action-item">
+              <div class="contact-action-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <span class="contact-action-label">GitHub</span>
+              <span class="contact-action-val">SubhadeepDas-Git</span>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/subhadeep-das-8a6ba4329/" target="_blank" rel="noopener noreferrer" class="contact-action-item">
+              <div class="contact-action-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <span class="contact-action-label">LinkedIn</span>
+              <span class="contact-action-val">subhadeep-das</span>
+            </a>
+          </div>
+
+          <div class="contact-bottom-cta">
+            <button class="btn btn-secondary btn-lg btn-copy-email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+              Copy Email Address
+            </button>
+            <a href="./assets/Subhadeep_Das_CV.pdf" download="Subhadeep_Das_CV.pdf" class="btn btn-primary btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download CV (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       SITE FOOTER
+       ========================================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span>&copy; 2026 Subhadeep Das.</span>
+        <span>Computer Science Engineering Student.</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home" class="footer-link">Back to Top</a>
+        <a href="https://github.com/SubhadeepDas-Git" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://www.linkedin.com/in/subhadeep-das-8a6ba4329/" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
+        <a href="./assets/Subhadeep_Das_CV.pdf" download="Subhadeep_Das_CV.pdf" class="footer-link">CV Document</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript -->
+  <script src="./js/main.js"></script>
+</body>
+</html>
